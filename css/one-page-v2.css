@@ -1,0 +1,354 @@
+body {
+    /*margin-top: 50px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  height: 100%;
+  width: 100%;
+}
+.map{
+    width: 100%;
+    height: 500px;
+}
+.center{
+    text-align: center;
+}
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.topbuffer{
+    margin-top: 10px;
+}
+.button, input, select, textarea{
+    background-color: transparent;
+}
+#mapCanvas {
+    background-image:  url(../imgs/loader.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.venta, .compra {
+    height: 300px;
+    color: #89c765;
+    text-align: center;
+    padding-top: 55px;
+    font-size: 129px;
+
+}
+.vertical-text {
+    border:1px solid #1eaea7;
+    font-size: 21px;
+}
+.border-compra, .border-venta {
+    border-bottom: 10px solid #16928c;
+}
+.ultima-actualizacion, .facebook{
+    margin-top: 10px;
+}
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: url('../imgs/background.png') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.headline {
+    padding: 30px 0px;
+}
+.headline-small {
+    padding: 10px 0px;
+    margin: 20px 0px; 
+}
+.headline h3 {
+    font-size: 100px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+.headline h4,.headline-small h4 {
+    font-size: 47px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+.featurette-divider {
+    margin: 80px 0;
+}
+.featurette {
+    overflow: hidden;
+}
+
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+.featurette-heading {
+    font-size: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.featurette-heading  .text-muted{
+    color: #16928c;
+}
+.hoverText:hover{
+    text-decoration: underline;
+}
+.animate
+{
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+.action-button {
+    position: relative;
+    padding: 10px 40px;
+    margin: 0px 10px 10px 0px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;  
+}
+.green {
+    background-color: #82BF56;
+    border-bottom: 5px solid #669644;
+    text-shadow: 0px -2px #669644;
+}
+.action-button:active {
+    transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+.info{
+    padding-top: 88px;
+}
+.infoMapa, .infoNombre, .infoZona{
+    padding-left: 43px;
+    font-size: 16.5px;
+}
+.infoNombre{
+    font-size: 18.5px;
+}
+.infoZona{
+    font-size: 12px;
+}
+.footer {
+    margin: 50px 0;
+}
+.removeTopMargin{
+    margin: 5px 0px;
+}
+.acerca{
+    font-size: 30px;
+}
+.faceupdate {
+    font-size: 20px;
+}
+@media(max-width:1200px) {
+    .headline h3 {
+        font-size: 90px;
+    }
+
+    .headline h4 {
+        font-size: 30px;
+    }
+
+    .featurette-divider {
+        margin: 50px 0;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 20px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 20px;
+    }
+
+    .featurette-heading {
+        font-size: 35px;
+    }
+}
+@media(max-width:1165px) {
+    .infoNombre{
+        font-size: 14.5px;
+    }
+    .infoMapa{
+        font-size: 12.5px;
+    }
+}
+@media(max-width:991px) {
+    .headline h3 {
+        font-size: 80px;
+    }
+
+    .headline h4 {
+        font-size: 20px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-image {
+        max-width: 50%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 10px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+    .info{
+        padding-left: 50px;
+        padding-top: 65px;
+    }
+    .infoNombre{
+        font-size: 19px;
+    }
+    .infoMapa{
+        font-size: 18px;
+    }
+    .infoZona{
+        font-size: 14px;
+    }
+}
+@media(max-width:768px) {
+    .container {
+        margin: 0 15px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-heading {
+        font-size: 40px;
+    }
+    .infoMapa{
+        font-size:16px;
+    }
+    .monto {
+        font-size: 135px;
+    }
+}
+@media(max-width:746px) {
+ 
+    .infoMapa{
+        font-size:14px;
+    }
+    .infoNombre{
+        font-size: 16px;
+    }
+    .info{
+        padding-top: 80px;
+    }
+}
+@media(max-width:691px) {
+ 
+    .infoMapa{
+        font-size:13px;
+    }
+    .infoNombre{
+        font-size: 15px;
+    }.infoZona{
+        font-size: 13px;
+    }
+    .action-button{
+        font-size: 22.5px;
+    }
+}
+@media(max-width:668px) {
+   .action-button{
+        font-size: 18.5px;
+        padding-left: 24px;
+    }
+    #mejorventacerca {
+        padding-left: 27px;
+    }
+    .headline h3 {
+        font-size: 70px;
+    }
+
+    .headline h4 {
+        font-size: 15px;
+    }
+
+    .featurette-divider {
+        margin: 30px 0;
+    }
+}
+@media(max-width:640px) {
+    .headline {
+        padding: 75px 0 25px 0;
+    }
+
+    .headline h3 {
+        font-size: 60px;
+    }
+    .headline h4 {
+        font-size: 15px;
+    }
+    .infoMapa{
+        font-size:12px;
+    }
+}
+@media(max-width:414px) {
+      .infoMapa{
+        font-size:11px;
+    }
+}
+@media(max-width:375px) {
+    .headline h3 {
+        font-size: 40px;
+    }
+    .headline h4 {
+        font-size: 10px;
+    }
+    .featurette-divider {
+        margin: 10px 0;
+    }
+    .featurette-image {
+        max-width: 100%;
+    }
+    .featurette-image.pull-left {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .featurette-image.pull-right {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    .infoMapa{
+        font-size:9px;
+    }
+    .monto {
+        font-size: 93px;
+    }
+    .venta, .compra {
+        height: 220px;
+    }
+}
+@media(max-width:320px) {
+    .info{
+        padding-top: 26px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .infoMapa{
+        font-size:5.3px;
+    }
+    .monto {
+        font-size: 93px;
+    }
+    .venta, .compra {
+        height: 220px;
+    }
+}
