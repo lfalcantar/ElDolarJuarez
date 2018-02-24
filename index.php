@@ -1,4 +1,4 @@
-<?php 
+<?php
     session_start();
     if (empty($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(openssl_random_pseudo_bytes(32));
@@ -99,7 +99,7 @@
         <!-- Mejor Compra y Venta Featurette -->
         <div class="featurette" id="mejorVenta">
 			<div class="row">
-	            <div class="topbuffer ">	
+	            <div class="topbuffer ">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <img class="logo" src="imgs/LogoV.png" alt="logo" >
@@ -222,11 +222,11 @@
     <!-- jQuery -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	   <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>	 
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <!-- Data Table -->
     <script>document.write('<script src="js/jquery.dataTables.min.js" type="text/javascript"><\/script>')</script>
     <!-- MAPS -->
     <script>document.write('<script src="js/mapsv5.js" type="text/javascript"><\/script>')</script>
-    <script>document.write('<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBimoXEvMSYzkxp3uq78Vs6wR0VVZ7rcI4&callback=initMap" type="text/javascript" async><\/script>')</script> 
+    <script>document.write('<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBimoXEvMSYzkxp3uq78Vs6wR0VVZ7rcI4&callback=initMap" type="text/javascript" async><\/script>')</script>
 </body>
 </html>
